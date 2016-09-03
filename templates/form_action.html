@@ -1,0 +1,21 @@
+ <html>
+    <head>
+        <title>Feedback acknoledgement</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+		<meta name="viewport" content="width=410, initial-scale=0.90">
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+				<h2>Thanks for your feedback</h2>
+                You rated session: <br>
+				<b>{{session}} </b><br>
+				{{content}} for content<br>
+				{{presenter}} for presenter<br>
+				<a href="/"><h3>Back to main menu</h3></a>
+				<a href="single.html"><h3>Review another session</h3></a>
+			<img src="{{ url_for('static', filename='logo.png') }}" width="270" />
+			</div>
+        </div>
+    </body>
+</html>

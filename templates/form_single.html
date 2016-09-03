@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Rate a session</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+        <!link rel=stylesheet type=text/css href="style.css">
+		<meta name="viewport" content="width=410, initial-scale=0.90">
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+				<h1>Rate Single Session</h1>
+				<h2>Choose the session to rate</h2>
+                <form method="post" action="{{ url_for('sthankyou') }}">
+				  <select name="session" style="width:270px; border:1px solid #73B7F7; padding:4px">
+					{{choices|safe}}
+				  </select>
+				  <div align="center">
+					<table >
+					<tbody>
+						<tr>
+							<td width="25%" align="left"><b>Score
+							<th width="15%">1
+							<th width="15%">2
+							<th width="15%">3
+							<th width="15%">4
+							<th width="15%">5
+						<tr>
+							<td><b>Content
+							<td><input type="radio" name="content" value="1" />
+							<td><input type="radio" name="content" value="2" />
+							<td><input type="radio" name="content" value="3" checked="checked" />
+							<td><input type="radio" name="content" value="4" />
+							<td><input type="radio" name="content" value="5" />
+						<tr>
+							<td><b>Presenter
+							<td><input type="radio" name="presenter" value="1" />
+							<td><input type="radio" name="presenter" value="2" />
+							<td><input type="radio" name="presenter" value="3" checked="checked" />
+							<td><input type="radio" name="presenter" value="4" />
+							<td><input type="radio" name="presenter" value="5" />
+					</table>
+					</div>
+					<br>
+                  <input class="btn-blue" type="submit" value="SUBMIT"/>
+                </form>
+				<img src="{{ url_for('static', filename='logo.png') }}" width="270" />
+            </div>
+
+		</div>
+    </body>
+</html>
+ 

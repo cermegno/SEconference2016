@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Main Menu</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+		<meta name="viewport" content="width=410, initial-scale=0.9">
+		</head>
+    <body>
+        <div class="container">
+            <div class="content">
+				  <h1>MAIN MENU</h1>
+				  <a href="program.html#{{anchor}}" class="btn-blue">VIEW THE PROGRAM</a>
+				  <br><br>
+				  <a href="floorplan" class="btn-blue">FLOORPLAN</a>
+				  <br><br>
+				  <a href="single.html" class="btn-blue">RATE A SESSION</a>
+				  <br><br>
+				  <a href="survey" class="btn-blue">FILL THE SURVEY</a>
+				  <br><br>
+				  <a href="upload_photo.html" class="btn-blue">UPLOAD A PHOTO</a>
+				  <br><br>
+				  <a href="showphotos.html" class="btn-blue">SEE ALL PHOTOS</a>
+				  <br><br>
+				  <b>
+				  Reviews received: {{reviews}}<br>
+				  Photos uploaded: {{photos}}<br>
+				  Unique visitors: {{ucount}} <br>
+				  </b>
+			<img src="{{ url_for('static', filename='logo.png') }}" width="270" />
+            </div>
+        </div>
+    </body>
+</html>
+ 
