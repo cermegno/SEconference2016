@@ -1,5 +1,6 @@
 # SE Conference app v1.1
-Companion app for EMC Australian SE Conference 2016
+Companion app for EMC Australian SE Conference 2016. There is a good chance that the app is still running here:
+http://asec16.cfapps.io/
 
 # SUMMARY
 Flask web app with Redis backend and EMC's ECS S3 object store.
